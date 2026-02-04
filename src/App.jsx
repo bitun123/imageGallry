@@ -1,23 +1,16 @@
-import React from "react";
-// import { fetchApi } from "./api/mediaApi";
-import { fetchGif } from "./api/mediaApi";
+import React from 'react'
+import SearchBar from './components/SearchBar'
+import Tabs from './components/Tabs'
+import ResultGrid from './components/ResultGrid'
 
 function App() {
-  // function getphoto(){
-  //     fetchApi();
-  // }
-
   return (
-    <div>
-      <button
-        onClick={async () => {
-          await fetchGif("cat");
-        }}
-      >
-        getpic
-      </button>
+    <div >
+      <SearchBar/>
+      <Tabs/>
+      <ResultGrid/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
