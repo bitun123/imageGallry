@@ -15,14 +15,14 @@ const dispatch = useDispatch()
   return (
     <div>
       <form
-        className="p-3 flex gap-5 bg-gray-500"
+        className="p-3 flex gap-5"
         onSubmit={(e) => {
           handleSubmit(e);
         }}
       >
         <input
           required
-          className="w-full  border-2 px-2 text-md rounded outline-none "
+          className="w-full px-3 text-black bg-[#EEEEEE] px-2 text-md rounded-4xl outline-none  border-black"
           type="text"
           placeholder="Search Anything"
           value={text}
@@ -30,7 +30,7 @@ const dispatch = useDispatch()
             settext(e.target.value);
           }}
         />
-        <button className=" px-6 py-2 text-xl rounded outline-none active:scale-95 bg-blue-700 text-white cursor-pointer">
+        <button className=" px-6 py-2 text-xl rounded outline-none active:scale-95 bg-gray-800 text-white cursor-pointer">
           Search
         </button>
       </form>

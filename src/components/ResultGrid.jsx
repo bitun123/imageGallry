@@ -63,12 +63,12 @@ function ResultGrid() {
     };
 
     getData();
-  }, [query, activeTab]);
+  }, [query, activeTab,dispatch]);
   if (error) return <h1>Error</h1>;
   if (loading) return <h1>Loading...</h1>;
 
   return (
-    <div className="w-full flex flex-wrap gap-6 rounded overflow-auto px-5 justify-center">
+    <div className="w-full flex flex-wrap gap-6 rounded overflow-auto px-5 justify-center ">
       {results.map((item, idx) => (
         
           <ResultCard key={idx} item={item} />
